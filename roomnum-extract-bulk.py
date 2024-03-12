@@ -78,3 +78,4 @@ for root, dirs, files in os.walk(root_folder):
         if filename.endswith(".dxf"):
             dxf_file = os.path.join(root, filename)
             process_dxf(dxf_file)
+
