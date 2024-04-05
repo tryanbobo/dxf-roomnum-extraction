@@ -51,8 +51,6 @@ def process_dxf(dxf_file):
 
             # Skip if no room numbers starting with digits
             #if not any(room[0].isdigit() for room in room_numbers):
-            #    print("No room numbers starting with digits in:", dxf_file)
-            #    return
 
             floor = determine_floor(room_numbers)
             data = {
@@ -71,7 +69,7 @@ def process_dxf(dxf_file):
 
 
 # Example usage
-root_folder = r"M:\MapCom\Bldg_floorplans\_DxfOutput"
+root_folder = r"folder with DXF files"
 
 for root, dirs, files in os.walk(root_folder):
     for filename in files:
